@@ -1,0 +1,36 @@
+.form-keskele {
+    background-color: azure;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+button {
+    background-color: blue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    cursor: pointer;
+}
+.width50{
+    *display: inline;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    width: 48%;
+}
+.formfield{
+    font-family: sans-serif;
+}
+#img1 {
+    height: 50px;
+    width: 50px;
+}
