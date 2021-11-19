@@ -1,10 +1,26 @@
 <template>
+  <Header/>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/login">About</router-link>
+    <router-link to="/contactus">ContactUs</router-link>
+    <router-link to="/login">LogIn</router-link>
   </div>
   <router-view />
+  <Footer/>
 </template>
+
+<script>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+export default ({
+    name:'Login',
+    components: {
+        Header,
+        Footer
+    }
+})
+</script>
 
 <style lang="scss">
 #app {
@@ -13,6 +29,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body{
+  padding:0;
+  margin:0;
+
 }
 
 #nav {
@@ -27,4 +49,5 @@
     }
   }
 }
+
 </style>
