@@ -44,7 +44,12 @@
     
     
     <div class="vertical">
-
+        <div class ="voting">
+            <button id="likebtn">
+                <img class ="like" src="res/images/like.png"></img>
+            </button>
+            <input type="number" id="input1" value="0" name="">
+        </div>
     
         <div class="container-1">
             <!-- <div class="flexbox-item flexbox-item-1">
@@ -71,5 +76,12 @@
 
         </div>
     </div>
-
+    <script type="text/javascript">
+        let likebtn = document.querySelector('#likebtn');
+        let input1 = document.querySelector('#input1');
+        likebtn.addEventListener('click',()=>{
+            input1.value = parseInt(input1.value) + 1;
+            input1.style.color = "#12ff00";
+        })
+</script>
 </body>
