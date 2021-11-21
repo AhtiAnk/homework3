@@ -1,34 +1,34 @@
 <template>
     <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Login</a>
-        <a href="#">Contact Us</a>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/contactus">Contact Us</router-link> |
+        <router-link to="/login">LogIn</router-link>
     </div>
 </template>
 
 <script>
-export default {
-    name: "Header",
+export default{
+    name:'Header'
 }
 </script>
 
 <style>
-.nav {
-    background-color: rgb(0, 89, 255);
-    overflow: hidden;
-}
+    .nav{
+        background-color:blue;
+        overflow: hidden;
+    }
 
-.nav a {
-    float: left;
-    color: black;
-    padding: 14px 14px;
-    text-align: center;
-    font-size: 17px;
-    text-decoration: none;
-}
+    .nav a {
+        float: left;
+        color: black;
+        padding: 14px 14px;
+        text-align: center;
+        font-size: 17px;
+        text-decoration: none;
+    }
 
-.nav a:hover {
-    background: chartreuse;
-    color: pink;
-}
+    .nav a:hover {
+        background: chartreuse;
+        color: pink;
+    }
 </style>
